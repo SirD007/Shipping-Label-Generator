@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items:flex-start;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow:hidden;    
+    background-color: #cccccc;
+}
+
+.container_shipping_label {
+    max-width: 160mm;
+    max-height: 160mm;
+    margin-inline: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(73, 73, 73, 0.288);
+    background-color: white;
+    margin-top: 20px;
+}
+
+.shipping_label {
+    max-width: 130mm;
+    padding: 20px;
+    color: rgb(53, 53, 53);
+    border: solid 1px rgb(53, 53, 53);
+    display: grid;
+    grid-template: "a b b"
+                   "to to to" 
+                   "c d d"
+                   "e e e";
+    grid-template-columns: 35% auto auto;
+    grid-template-rows: 20% 5% 60% auto;
+    background-color: white;
+    height: auto;
+}
+
+.logo {
+    grid-area: a;
+    border-bottom: solid 1px rgb(53, 53, 53);
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px rgb(53, 53, 53);
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.from {
+    grid-area: b;
+    border-bottom: solid 1px rgb(53, 53, 53);
+    padding: 20px;
+}
+
+.from p {
+    margin: auto;
+}
+
+.to {
+    grid-area: to;
+}
+
+.to h2 {
+    text-align: center;
+}
+
+.labels {
+    grid-area: c;
+    border-bottom: solid 1px rgb(53, 53, 53);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.labels p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px auto;
+    line-height: 15px;
+}
+
+.shipto {
+    grid-area: d;
+    border-bottom: solid 1px rgb(53, 53, 53);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.shipto .item p {
+    font-weight: 400;
+    font-size: 16px;
+    margin:5px auto;
+    line-height: 15px;
+}
+
+.footer {
+    grid-area: e;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.new_label_button {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    width: auto;
+    bottom: 5%;
+}
+
+.new_btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.new_btn:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+}
+
+@media print {
+    .new_label_button {
+        display: none;
+    }
+
+    .container_shipping_label{
+        box-shadow: none;
+    }
+}
