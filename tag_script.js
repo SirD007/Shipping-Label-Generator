@@ -36,3 +36,11 @@ postal_code.innerText = readCookie('postal_code')
 city.innerText = readCookie('city')
 state.innerText = readCookie('state')
 
+var rightHeight = document.getElementById('rightdiv').clientHeight;
+var leftHeight = document.getElementById('leftdiv').clientHeight;
+
+if (leftHeight > rightHeight) {
+document.getElementById('rightdiv').style.height=leftHeight+'px';
+} else {
+document.getElementById('leftdiv').style.height=rightHeight+'px';
+}

@@ -74,6 +74,14 @@ body {
     text-align: center;
 }
 
+/* #rightdiv {
+    height: fit-content;
+}
+
+#leftdiv {
+    height: fit-content;
+} */
+
 .labels {
     grid-area: c;
     border-bottom: solid 1px rgb(53, 53, 53);
