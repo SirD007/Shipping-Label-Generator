@@ -11,10 +11,10 @@ body {
 }
 
 .container_shipping_label {
-    max-width: 160mm;
-    max-height: 160mm;
+    max-width: 120mm;
+    max-height: auto;
     margin-inline: auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 10px 15px rgba(73, 73, 73, 0.288);
     background-color: white;
@@ -32,9 +32,9 @@ body {
                    "c d d"
                    "e e e";
     grid-template-columns: 35% auto auto;
-    grid-template-rows: 20% 5% 60% auto;
+    grid-template-rows: 30% 3% 50% auto;
     background-color: white;
-    height: auto;
+    height: 130mm;
 }
 
 .logo {
@@ -43,7 +43,8 @@ body {
     justify-content: center;
     align-items: center;
     border-right: solid 1px rgb(53, 53, 53);
-    padding: 10px;
+    padding: 5px;
+    display: flex;
 }
 
 .logo img {
@@ -54,11 +55,15 @@ body {
 .from {
     grid-area: b;
     border-bottom: solid 1px rgb(53, 53, 53);
-    padding: 20px;
+    padding: 10px 15px;
 }
 
 .from p {
     margin: auto;
+}
+
+.from h3 {
+    margin: 0;
 }
 
 .to {
@@ -99,7 +104,7 @@ body {
 
 .footer {
     grid-area: e;
-    padding: 20px;
+    padding: 10px;
 }
 
 .footer p {

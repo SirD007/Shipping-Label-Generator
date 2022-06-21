@@ -27,8 +27,8 @@ let logos = {
 let logo_path = logos[readCookie('company')];
 logo.setAttribute('src', logo_path);
 recipient_name.innerText = readCookie('recipient_name')
-address.innerText = readCookie('address')
-house_number.innerText = readCookie('house_number')
+address.innerText = readCookie('address') + ', ' + readCookie('house_number')
+// house_number.innerText = readCookie('house_number')
 district.innerText = readCookie('district')
 complement.innerText = readCookie('complement')
 if (complement.innerText === "") {complement.innerText = "-"}
