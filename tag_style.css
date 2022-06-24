@@ -2,6 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items:flex-start;
     width: 100vw;
     height: 100vh;
@@ -120,33 +121,66 @@ body {
     text-align: center;
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    margin-inline: auto;
+}
+
 .new_label_button {
-    position: absolute;
     left: 40%;
     right: 40%;
     width: auto;
     bottom: 5%;
 }
 
+.print_button {
+    width: auto;
+    bottom: 5%;
+}
+
 .new_btn {
     width: 100%;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4caf4f00;
+    color: #4caf4f;
     padding: 14px 20px;
     margin: 8px 0px;
-    border: none;
+    border: #4caf4f 2px solid;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 .new_btn:hover {
+    background-color: #4caf4f;
+    opacity: 0.8;
+    transform: translateY(-5px);
+    color: white;
+}
+
+.print_btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: #4caf4f 2px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.print_btn:hover {
     opacity: 0.8;
     transform: translateY(-5px);
 }
 
 @media print {
     .new_label_button {
+        display: none;
+    }
+    .print_button {
         display: none;
     }
 
