@@ -21,7 +21,8 @@ function readCookie(name) {
 
 let logos = {
 	"Monstrosol": "assets/logo-monstrosol.png",
-  	"MaskPro": "assets/logo_maskpro.png"
+  	"MaskPro": "assets/logo_maskpro.png",
+    "HDP": "assets/logo_hdp.png"
 };
 
 let logo_path = logos[readCookie('company')];
