@@ -45,3 +45,12 @@ document.getElementById('rightdiv').style.height=leftHeight+'px';
 } else {
 document.getElementById('leftdiv').style.height=rightHeight+'px';
 }
+
+var rightHeightc = document.getElementById('rightdivc').clientHeight;
+var leftHeightc = document.getElementById('leftdivc').clientHeight;
+
+if (leftHeightc > rightHeightc) {
+document.getElementById('rightdivc').style.height=leftHeightc+'px';
+} else {
+document.getElementById('leftdivc').style.height=rightHeightc+'px';
+}

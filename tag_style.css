@@ -33,9 +33,10 @@ body {
                    "c d d"
                    "e e e";
     grid-template-columns: 35% auto auto;
-    grid-template-rows: 35% 3% auto 15%;
+    grid-template-rows: 30% 1% auto auto;
     background-color: white;
     height: 120mm;
+    max-height: 130mm;
 }
 
 .logo {
@@ -109,6 +110,10 @@ body {
     font-size: 16px;
     margin:5px auto;
     line-height: 15px;
+}
+
+#postal_code {
+    font-weight: bold;
 }
 
 .footer {
