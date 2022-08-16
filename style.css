@@ -69,6 +69,14 @@ input, select {
     box-sizing: border-box;
 }
 
+input:focus, select:focus {
+    outline: 1px solid #4CAF50;
+}
+
+input:hover, select:hover {
+    border: 1px solid #4CAF50;
+}
+
 #adress {
     width: 80%;
 }
