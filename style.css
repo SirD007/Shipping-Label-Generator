@@ -113,3 +113,8 @@ input[type=submit]:hover {
     background-color: #4CAF50;
     opacity: 0.9;
 }
+
+span {
+    color: red;
+    margin-top: 10px;
+}
