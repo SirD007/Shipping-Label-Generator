@@ -7,6 +7,7 @@ const district = document.getElementById('district');
 const postal_code = document.getElementById('postal_code');
 const city = document.getElementById('city');
 const state = document.getElementById('state');
+const nf = document.getElementById('nf');
 
 function readCookie(name) {
     var nameEQ = name + "=";
@@ -37,6 +38,7 @@ if (complement.innerText === "") {complement.innerText = "-"}
 postal_code.innerText = readCookie('postal_code')
 city.innerText = readCookie('city')
 state.innerText = readCookie('state')
+nf.innerText = readCookie('nf')
 
 var rightHeight = document.getElementById('rightdiv').clientHeight;
 var leftHeight = document.getElementById('leftdiv').clientHeight;

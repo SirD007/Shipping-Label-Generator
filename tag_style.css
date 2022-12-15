@@ -70,6 +70,16 @@ body {
 
 .to {
     grid-area: to;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 50px;
+}
+
+.nftext {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .to h2 {

@@ -41,6 +41,15 @@ img{
     box-shadow: 10px 10px 20px rgba(112, 112, 112, 0.315);
 }
 
+.firstInput {
+    display:flex;
+    gap: 10px;
+}
+
+.firstInput .inp{
+    width: 50%;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

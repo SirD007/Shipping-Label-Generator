@@ -8,6 +8,7 @@ const complement = tag_form.elements['complement'];
 const postal_code = tag_form.elements['postal_code'];
 const city = tag_form.elements['city'];
 const state = tag_form.elements['state'];
+const nf = tag_form.elements['nf'];
 
 function createCookie(name, value, days) {
     if (days) {
@@ -75,4 +76,5 @@ tag_form.addEventListener('submit', (event) => {
     createCookie("postal_code", postal_code.value, 1);
     createCookie("city", city.value, 1);
     createCookie("state", state.value, 1);
+    createCookie("nf", nf.value, 1);
 });
