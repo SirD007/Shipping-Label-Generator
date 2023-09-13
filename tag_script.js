@@ -24,7 +24,8 @@ let logos = {
 	"Monstrosol": "assets/logo-monstrosol.png",
   	"MaskPro": "assets/logo_maskpro.png",
     "HDP": "assets/logo_hdp.png",
-    "TAE": "assets/logo_tae.png"
+    "TAE": "assets/logo_tae.png",
+    "Ah Hyun Jeong": "assets/tyi_logo.png"
 };
 
 let logo_path = logos[readCookie('company')];
